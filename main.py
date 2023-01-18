@@ -1,8 +1,8 @@
-from flask import Flask
+from flask import Flask,render_template
 app = Flask(__name__)
 @app.route("/")
 def Heloo_world():
-  return "Hello Ewnetu"
+  return render_template('home.html')
 
 if __name__ == "__main__":
   #print('I am inside the if now')
